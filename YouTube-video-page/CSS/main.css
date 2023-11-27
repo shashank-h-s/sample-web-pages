@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.video_container{
+    width: 90%;
+    max-width: 1000px;
+}
+
+video{
+    width: 100%;
+}
