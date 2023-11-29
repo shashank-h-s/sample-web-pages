@@ -30,7 +30,38 @@ video{
 
 .video-container:hover .video-control-container,
 .video-container:focus-within .video-control-container,
-.video-container.paused ,.video-control-container
+.video-container.paused .video-control-container
 {
     opacity: 1;
+}
+
+.video-control-container .controls{
+    display: flex;
+    gap: .5rem;
+    padding: .25rem;
+    align-items: center;
+}
+
+.video-control-container .controls button{
+    background: none;
+    border: none;
+    color: inherit;
+    height: 20px;
+    width: 25px;
+    padding: 0;
+    font-size:1.1rem ;
+    cursor: pointer;
+    opacity: .85;
+    transition: opacity 150ms ease-in-out;
+}
+.video-control-container .controls button:hover{
+    opacity:1;
+}
+
+.video-container.paused .pause-icon{
+    display:none;
+}
+
+.video-container:not(.paused) .play-icon{
+    display:none;
 }
